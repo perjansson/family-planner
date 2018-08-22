@@ -1,0 +1,21 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "10.0"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-async-to-generator",
+    [
+      "module-resolver",
+      {
+        "root": ["./node_modules", "./"]
+      }
+    ]
+  ]
+}
